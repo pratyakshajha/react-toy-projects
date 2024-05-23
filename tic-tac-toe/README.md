@@ -1,4 +1,6 @@
 # Tic Tac Toe game
+The design looks like:
+![companents-image](image.png)
 
 ## Installation
 - Install Nodejs, if not installed already
@@ -16,7 +18,7 @@
 - [X] Rewrite Board to use two loops to make the squares instead of hardcoding them.
 - [ ] When someone wins, highlight the three squares that caused the win (and when no one wins, display a message about the result being a draw).
 - [ ] Display the location for each move in the format (row, col) in the move history list.
-- [ ] Add a refresh/reset button + play again
+- [X] Add a refresh/reset button/play again
 - [ ] Play sound on win
 - [ ] Show ghost of character when hovering on board
 - [ ] Prettify
