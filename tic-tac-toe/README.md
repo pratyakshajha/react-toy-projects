@@ -19,9 +19,8 @@ The design looks like:
 - [ ] When someone wins, highlight the three squares that caused the win (and when no one wins, display a message about the result being a draw).
 - [ ] Display the location for each move in the format (row, col) in the move history list.
 - [X] Add a refresh/reset button/play again
-- [ ] Play sound on win
-- [ ] Show ghost of character when hovering on board
-- [ ] Prettify
+- [X] Play sound on win
+- [X] Prettify
 
 ## References
 - [tutorial-tic-tac-toe](https://react.dev/learn/tutorial-tic-tac-toe)

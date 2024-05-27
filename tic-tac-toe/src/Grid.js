@@ -18,7 +18,7 @@ export default function Grid({ xIsNext, squares, onPlay }) {
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = "Winner: " + winner;
+    status = "Winner: " + winner + " 🥳";
   } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
@@ -43,8 +43,8 @@ export default function Grid({ xIsNext, squares, onPlay }) {
 
   return (
     <>
-      {getGrid()}
       <div className="status">{status}</div>
+      {getGrid()}
     </>
   );
 }
@@ -63,6 +63,8 @@ function calculateWinner(squares) {
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      var audio = new Audio("win.wav");
+      audio.play();
       return squares[a];
     }
   }

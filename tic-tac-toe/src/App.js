@@ -23,19 +23,27 @@ export default function Game() {
     setCurrentMove(nextMove);
   }
 
+  // TODO
+  function getLocation(move) {
+    console.log(history[move]);
+    return "x, y";
+  }
+
   let moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = "Go to move #" + move;
+      description = "Go to move # " + move + " ( " + getLocation(move) + " )";
     } else {
       return;
     }
     return (
       <div key={move}>
         {move == currentMove ? (
-          "You are at move # " + currentMove
+          <div class="current-move"> You are at move # {currentMove} </div>
         ) : (
-          <button onClick={() => jumpTo(move)}>{description}</button>
+          <button class="move-history" onClick={() => jumpTo(move)}>
+            {description}
+          </button>
         )}
       </div>
     );
@@ -47,8 +55,8 @@ export default function Game() {
         <Grid xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
-        <div>{moves}</div>
         <button onClick={handleReset}>Reset Game</button>
+        <div>{moves}</div>
       </div>
     </div>
   );
