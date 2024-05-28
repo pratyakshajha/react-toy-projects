@@ -23,23 +23,33 @@ export default function Game() {
     setCurrentMove(nextMove);
   }
 
-  // TODO
   function getLocation(move) {
-    console.log(history[move]);
-    return "x, y";
+    let moveIndex = 0;
+    let current = history[move];
+    let previous = history[move - 1];
+
+    for (moveIndex; moveIndex < current.length; moveIndex++) {
+      if (current[moveIndex] != previous[moveIndex]) {
+        break;
+      }
+    }
+
+    let x = Math.floor(moveIndex / 3) + 1;
+    let y = (moveIndex % 3) + 1;
+    return [x, y];
   }
 
   let moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = "Go to move # " + move + " ( " + getLocation(move) + " )";
+      description = `Go to move # ${move} (${getLocation(move).join(", ")})`;
     } else {
       return;
     }
     return (
       <div key={move}>
         {move == currentMove ? (
-          <div class="current-move"> You are at move # {currentMove} </div>
+          <div class="current-move"> You are at move # {currentMove} ({getLocation(move).join(", ")}) </div>
         ) : (
           <button class="move-history" onClick={() => jumpTo(move)}>
             {description}

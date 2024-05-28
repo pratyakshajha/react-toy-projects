@@ -40,6 +40,7 @@ button:hover {
 #root {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -84,6 +85,7 @@ button.square {
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 20px 50px;
   height: 100%;
   width: 100%;
