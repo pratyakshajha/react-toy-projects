@@ -2,6 +2,7 @@
   --primary-color: #ffffff;
   --accent-color: #2d96bd;
   --accent-color-lighter: #2fa1ca;
+  --strike-color: red;
 }
 
 * {
@@ -118,4 +119,74 @@ button.move-history {
   padding: 5px 15px;
   margin: 5px 0;
   width: 100%;
+}
+
+.strike-row-1 {
+  position: absolute;
+  background-color: var(--strike-color);
+  width: 30%;
+  height: 5px;
+  top: 195px;
+  left: 23%;
+}
+
+.strike-row-2 {
+  position: absolute;
+  background-color: var(--strike-color);
+  width: 30%;
+  height: 5px;
+  top: 345px;
+  left: 23%;
+}
+
+.strike-row-3 {
+  position: absolute;
+  background-color: var(--strike-color);
+  width: 30%;
+  height: 5px;
+  top: 495px;
+  left: 23%;
+}
+
+.strike-column-1 {
+  position: absolute;
+  background-color: var(--strike-color);
+  width: 5px;
+  height: 64%;
+  top: 140px;
+  left: 27%;
+}
+
+.strike-column-2 {
+  position: absolute;
+  background-color: var(--strike-color);
+  width: 5px;
+  height: 64%;
+  top: 140px;
+  left: 38%;
+}
+
+.strike-column-3 {
+  position: absolute;
+  background-color: var(--strike-color);
+  width: 5px;
+  height: 64%;
+  top: 140px;
+  left: 49%;
+}
+
+.strike-diagonal-1 {
+  position: absolute;
+  background-color: var(--strike-color);
+  width: 530px;
+  height: 5px;
+  transform: translateY(320px) translateX(-45px) rotate(45deg);
+}
+
+.strike-diagonal-2 {
+  position: absolute;
+  background-color: var(--strike-color);
+  width: 530px;
+  height: 5px;
+  transform: translateY(320px) translateX(-35px) rotate(-45deg);
 }

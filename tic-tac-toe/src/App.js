@@ -49,9 +49,9 @@ export default function Game() {
     return (
       <div key={move}>
         {move == currentMove ? (
-          <div class="current-move"> You are at move # {currentMove} ({getLocation(move).join(", ")}) </div>
+          <div className="current-move"> You are at move # {currentMove} ({getLocation(move).join(", ")}) </div>
         ) : (
-          <button class="move-history" onClick={() => jumpTo(move)}>
+          <button className="move-history" onClick={() => jumpTo(move)}>
             {description}
           </button>
         )}

@@ -1,17 +1,17 @@
 # Tic Tac Toe game
 The design looks like:
-![companents-image](image.png)
+![components-image](image.png)
 
 ## Installation
 - Install Nodejs, if not installed already
-- Use `git clone https://github.com/pratyakshajha/react-toy-projects.git` to clone this repository.
+- Use `git clone https://github.com/pratyakshajha/react-toy-projects.git` to clone this repository
 - Use `cd react-toy-projects` to switch directory
 - Use `cd tic-tac-toe` to switch to this project
 - Run `npm install` to install dependencies
 
 ## How to run
 - Use `npm start` to start the local server
-- Got to `http://localhost:3000/` to view the app.
+- Got to `http://localhost:3000/` to view the app
 
 ## To Do
 - [X] For the current move only, show “You are at move #…” instead of a button.
@@ -21,7 +21,6 @@ The design looks like:
 - [X] Add a refresh/reset button/play again
 - [X] Play sound on win
 - [X] Prettify
-- [ ] Add responsiveness
 
 ## References
 - [tutorial-tic-tac-toe](https://react.dev/learn/tutorial-tic-tac-toe)
