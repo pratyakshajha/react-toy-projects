@@ -16,7 +16,7 @@ The design looks like:
 ## To Do
 - [X] For the current move only, show “You are at move #…” instead of a button.
 - [X] Rewrite Board to use two loops to make the squares instead of hardcoding them.
-- [ ] When someone wins, highlight the three squares that caused the win (and when no one wins, display a message about the result being a draw).
+- [X] When someone wins, highlight the three squares that caused the win (and when no one wins, display a message about the result being a draw).
 - [X] Display the location for each move in the format (row, col) in the move history list.
 - [X] Add a refresh/reset button/play again
 - [X] Play sound on win

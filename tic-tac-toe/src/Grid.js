@@ -7,10 +7,10 @@ function Square({ value, onSquareClick }) {
 }
 
 export default function Grid({ xIsNext, squares, onPlay }) {
-  let winner = calculateWinner(squares);
+  let [winner, winnerIndex] = calculateWinner(squares);
 
   function handleClick(i) {
-    if (squares[i] || winner[0]) return;
+    if (squares[i] || winner) return;
     const nextSquares = squares.slice();
     if (xIsNext) nextSquares[i] = "X";
     else nextSquares[i] = "O";
@@ -19,14 +19,14 @@ export default function Grid({ xIsNext, squares, onPlay }) {
 
   let status;
   let strikeClass;
-  if (winner[0]) {
-    status = "Winner: " + winner[0] + " 🥳";
+  if (winner) {
+    status = "Winner: " + winner + " 🥳";
   } else if (squares.filter((i) => i === null).length === 0) {
     status = "Tie! Game ended";
   } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
-  switch (winner[1]) {
+  switch (winnerIndex) {
     case 0:
       strikeClass = "strike-row-1";
       break;
@@ -98,7 +98,7 @@ function calculateWinner(squares) {
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       var audio = new Audio("win.wav");
       audio.play();
-      return [squares[a], i]; // winner, index
+      return [squares[a], i]; // winner, winner's index
     }
   }
   return [null, null];
