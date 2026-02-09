@@ -6,6 +6,7 @@ Each folder is its own project, each having a README file with details.
 
 # Notes
 - Create a new react app using: `npm init react-app my-app`
+- Run project: `npm start`
 
 ## Practice Ideas:
 Easy/Common
@@ -21,9 +22,13 @@ Easy/Common
     - Email, password, confirm password
     - Show inline errors
     - Disable submit until valid
-- [ ] Search Filter
-    - List of items
-    - Real-time filtering as user types
+- [x] Search Filter
+    - [x] List of items
+    - [x] Real-time filtering as user types
+    - [x] Debounced search (search after user stops typing)
+    - [x] Cancel previous calls
+    - [x] Search with highlight
+    - [ ] Prettify in simple
 - [ ] Tabs Component
     - Switch tabs
     - Highlight active tab
@@ -43,9 +48,6 @@ State related
     - Next / previous
     - Disable buttons correctly
     - Page number display
-- [ ] Debounced Search
-    - API call after user stops typing
-    - Cancel previous calls
 - [ ] Timer / Stopwatch
     - Start / pause / reset
     - Cleanup intervals correctly
