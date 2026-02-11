@@ -37,3 +37,7 @@ Builds the app for production to the `build` folder.
 - String manipulation and regex for text highlighting
 - Controlled components
 - Array filtering and mapping
+
+
+## Demo
+![Demo GIF](demo.gif)

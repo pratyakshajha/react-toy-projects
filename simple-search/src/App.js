@@ -1,4 +1,3 @@
-import 'purecss/build/pure.css';
 import './App.css';
 import UserSearch from './UserSearch';
 

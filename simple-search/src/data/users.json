@@ -228,5 +228,51 @@
       "catchPhrase": "Centralized empowering task-force",
       "bs": "target end-to-end models"
     }
+  },
+  {
+  "id": 11,
+  "name": "Dominic Hartmann",
+  "username": "DomHart",
+  "email": "Dominic.Hartmann@brightside.io",
+  "address": {
+    "street": "Willow Creek Road",
+    "suite": "Apt. 214",
+    "city": "North Riverton",
+    "zipcode": "48219-2204",
+    "geo": {
+      "lat": "41.9028",
+      "lng": "-87.6298"
+    }
+  },
+  "phone": "312-555-7894",
+  "website": "dominicdev.com",
+  "company": {
+    "name": "BrightSide Technologies",
+    "catchPhrase": "Innovative scalable platforms",
+    "bs": "empower cross-platform solutions"
+  }
+},
+{
+  "id": 12,
+  "name": "Ariana Velasquez",
+  "username": "AriV",
+  "email": "Ariana.Velasquez@novaworks.ai",
+  "address": {
+    "street": "Sunset Boulevard",
+    "suite": "Suite 502",
+    "city": "Westbrook",
+    "zipcode": "90210-7788",
+    "geo": {
+      "lat": "34.0522",
+      "lng": "-118.2437"
+    }
+  },
+  "phone": "213-555-4421",
+  "website": "arianavelasquez.dev",
+  "company": {
+    "name": "NovaWorks AI",
+    "catchPhrase": "Next-generation intelligent systems",
+    "bs": "leverage data-driven innovation"
+    }
   }
 ]

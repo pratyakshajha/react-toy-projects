@@ -10,6 +10,10 @@ Each folder is its own project, each having a README file with details.
 
 ## Practice Ideas:
 Easy/Common
+- [ ] Call API and display data
+    - Fetch data from API
+    - Display data
+    - Refresh data
 - [ ] Todo App
     - Add / delete / edit todos
     - Mark complete
@@ -28,7 +32,7 @@ Easy/Common
     - [x] Debounced search (search after user stops typing)
     - [x] Cancel previous calls
     - [x] Search with highlight
-    - [ ] Prettify in simple
+    - [x] Prettify
 - [ ] Tabs Component
     - Switch tabs
     - Highlight active tab
@@ -80,3 +84,14 @@ Slightly Advanced
 - [ ] Theme Toggle
     - Light / dark mode
     - Persist in localStorage
+
+
+Rest APIs that can be used to make projects:
+- https://restcountries.com/#endpoints-all
+- https://openweathermap.org/api
+- https://jsonplaceholder.typicode.com/posts
+- https://www.omdbapi.com/
+- https://newsapi.org/
+- https://official-joke-api.appspot.com/random_joke
+- https://www.exchangerate-api.com/
+- https://dummyjson.com/

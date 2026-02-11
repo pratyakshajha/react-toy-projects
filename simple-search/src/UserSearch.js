@@ -55,7 +55,7 @@ export default function UserSearch() {
 
 
 return (
-    <div className="flex">
+    <div className="container">
         <input 
             type="text"
             placeholder="Search users"
@@ -65,9 +65,12 @@ return (
         >
         </input>
 
-        <ul>
+        <ul className="user-list">
             {filteredUsers.map((user) => (
-                <li key={user.id}> {highlightText(user.name)} - {user.email} </li>
+                <li className="list-item" key={user.id}>
+                    <h3> {highlightText(user.name)} </h3> 
+                    <span> {user.email} </span> 
+                </li>
             ))}
         </ul>
     </div>

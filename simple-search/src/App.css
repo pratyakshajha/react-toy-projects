@@ -1,5 +1,87 @@
-.search-input {
+/* Page background */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+}
+
+/* Container */
+.container {
   display: flex;
-  margin: 20px 5px 5px 40px;
-  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+/* Search Input */
+.search-input {
+  width: 500px;
+  max-width: 90%;
+  padding: 14px 16px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.search-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+}
+
+/* User list grid */
+.user-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 1200px;
+}
+
+/* User card */
+.list-item {
+  flex: 1 1 280px;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Name */
+h3 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Email */
+.list-item span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Highlighted search text */
+mark {
+  background-color: #fff3b0; /* soft warm yellow */
+  color: #222;
+  padding: 2px 0px;
+  border-radius: 4px;
+  font-weight: 600;
 }
