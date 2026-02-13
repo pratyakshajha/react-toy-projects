@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import { getJokes } from './services/jokeService';
+import { fetchJokes } from './services/jokeService';
 import type { Joke } from './models/joke';
 import './App.css';
-import JokeList from './components/Jokelist';
+import JokeList from './components/JokeList';
 
 function App() {
   const [data, setData] = useState<Joke[]>([]);
@@ -11,7 +11,8 @@ function App() {
 
   const loadJokes = async () => {
     try {
-      const data = await getJokes();
+      setLoading(true);
+      const data = await fetchJokes();
       setData(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unknown error!');
