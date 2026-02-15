@@ -1,4 +1,4 @@
-# Show Data from API
+# React Joke Wall
 
 A small Vite + React + TypeScript demo that fetches jokes from an external API and displays them in a responsive, masonry-style layout.
 
