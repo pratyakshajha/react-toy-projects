@@ -35,5 +35,4 @@ A simple Vite + React + TypeScript app that lets you count sheep.
   - [ ] Show message: “You're asleep!”
   - [ ] Cannot go below 0
   - [ ] Reset re-enables button
-- [ ] Add a sound effect for each sheep counted.
-- [ ] Sheep auto-increments every second.
+- [X] Sheep auto-increments every second.
