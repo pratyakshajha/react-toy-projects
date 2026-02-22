@@ -21,7 +21,7 @@ Easy/Common
   - Add / delete / edit todos
   - Mark complete
   - Filter (all / active / completed)
-- [ ] Counter with constraints
+- [X] Counter with constraints
   - Increment / decrement
   - Min / max limit
   - Reset button
